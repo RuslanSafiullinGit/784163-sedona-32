@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ruslan Safiullin](https://up.htmlacademy.ru/htmlcss/32/user/784163).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Калинин](https://htmlacademy.ru/profile/id918955).
 
 ---
 
