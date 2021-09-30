@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="catalog.html">О Седоне</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+        <ul>
+          <li>><a href=""><img src="" alt="логотип Седона"></a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><span class="visually-hidden">поиск</span></a></li>
+          <li><a href="#"><span class="visually-hidden">избранное</span></a></li>
+          <li><a href="#"><span class="visually-hidden">хочу сюда</span></a></li>
+        </ul> 
+      </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Гостиницы Седоны</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html"><img src="#" alt="на главную"></a></li>
+                <li><a href="#">Гостиницы</a></li>
+            </ul>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset>
+                    <h2>Инфрастуктура:</h2>
+                    <ul>
+                        <li><label><input type="checkbox" name="pool">Бассейн</label></li>
+                        <li><label><input type="checkbox" name="parking">Парковка</label></li>
+                        <li><label><input type="checkbox" name="wifi">Wi-Fi</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <h2>Тип жилья:</h2>
+                    <ul>
+                        <li><label ><input type="radio" name="flat-type">Гостиница</label></li>
+                        <li><label ><input type="radio" name="flat-type">Мотель</label></li>
+                        <li><label ><input type="radio" name="flat-type">Апартаменты</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <h2>Стоимость,₽:</h2>
+                    <label for="min-price">от</label>
+                    <input type="number" name="min-price" id="min-price" value="0">
+                    <label for="max-price">до</label>
+                    <input type="number" name="max-price" id="max-price" value="9000">
+                    <button type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                </fieldset>
+                <button type="submit">Применить</button>
+                <button type="submit">Сбросить</button>
+            </form>
+        </section>
+        <section>
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Только полезная информация и никакого спама,
+              честное бойскаутское!</p>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <input type="email" name="clients-email" placeholder="Ваш e-mail">
+              <button type="button">подписаться</button>
+            </form>
+          </section>
+        <footer>
+            <p><ul>
+              <li><a href="https://twitter.com/htmlacademy_ru"><img src="#" alt="twitter"></a></li>
+              <li><a href="https://www.facebook.com/htmlacademy"><img src="#" alt="facebook"></a></li>
+              <li><a href="https://www.youtube.com/c/HTMLAcademyRUS"><img src="#" alt="youtube"></a></li>
+              </ul>
+            </p>
+            <p>
+              <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </p>
+            <p>
+              <a href="https://htmlacademy.ru/"><img src="#" alt="htmlacademy"></a>
+            </p>
+          </footer>
+
+    </main>
