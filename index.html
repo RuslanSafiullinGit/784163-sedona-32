@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container text-center">
     <header>
-      <nav class="navigation flex">
-        <ul class="navigation__list list">
+      <nav class="navigation navigation__flex">
+        <ul class="navigation__list list list__flex flex">
           <li class="navigation__item list__item "><a class="link" href="#">Главная</a></li>
           <li class="navigation__item list__item "><a class="link" href="catalog.html">О Седоне</a></li>
           <li class="navigation__item list__item "><a class="link" href="hotels.html">Гостиницы</a></li>
@@ -20,7 +21,7 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation__list list">
+        <ul class="navigation__list list list__flex flex">
           <li class="navigation__item list__item ">
             <a class="link" href="#">
               <img src="img/svg/searchlens.svg" width="18" height="18" alt="поиск">
@@ -37,91 +38,100 @@
         </ul> 
       </nav>
     </header>
-    <main>
+    <main class="main-container">
       <h1 class="visually-hidden">sedona</h1>
       <section>
         <div class="img-wrapper img-wrapper--contrast">
-          <img src="img/svg/welcometosedona.svg" alt="welcome to sedona" width="458" height="352">
-          <div class="img-wrapper__decoration "></div>
+          <img class="img-slogan" src="img/svg/welcometosedona.svg" alt="welcome to sedona" width="458" height="352">
+          <div class="img-wrapper__decoration ">
+          </div>
         </div>
       </section>
       <section class="promo">
-        <h2 class="headline headline--medium">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="promo__title promo__title--text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ol class="list ordered-list">
-          <li>
-            <div class="minor-text">
-              <h3 class="headline headline--small">Настоящий городок</h3>
+        <div class="promo-item promo-item--size-m">
+          <h2 class="headline-main headline--medium">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="promo__title promo__title--text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+        <ol class="list ordered-list flex">
+          <li class="list__item flex">
+            <div class="minor-text promo-item promo-item--size-s">
+              <h3 class="headline-main headline--small">Настоящий городок</h3>
               <p>-№1-</p>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div><img src="img/sedona-city.jpg" alt="фото города" width="800" height="384"></div>
-            <ul class="list">
-              <li class="list__item background-opacity-first">
+            <div class="promo-item promo-item--size-l"><img src="img/sedona-city.jpg" alt="фото города" width="800" height="384"></div>
+            <ul class="list flex">
+              <li class="list__item background-opacity-first promo-item promo-item--size-s">
                 <div><img src="img/svg/house.svg" alt="домик" width="75" height="72"></div>
-                <h4 class="headline headline--small">Жильё</h4>
+                <h4 class="headline-main headline--small">Жильё</h4>
                 <p>Рекомендуем пожить 
                   в настоящем мотеле, 
                   всё как в кино!</p>
               </li>
-              <li class="list__item ">
+              <li class="list__item promo-item promo-item--size-s">
                 <div><img src="img/svg/hamburger.svg" alt="бургер" width="74" height="70"></div>
-                <h4 class="headline headline--small">Еда</h4>
+                <h4 class="headline-main headline--small">Еда</h4>
                 <p>Всегда заказывайте
                   топовый фирменный бургер, вы не разочаруетесь! </p>
               </li>
-              <li class="list__item background-opacity-first">
+              <li class="list__item background-opacity-first promo-item promo-item--size-s">
                 <div><img src="img/svg/presentbox.svg" alt="коробочка с бантиком" width="64" height="76"></div>
-                <h4 class="headline headline--small">Сувениры</h4>
+                <h4 class="headline-main headline--small">Сувениры</h4>
                 <p>Не только китайского, но и настоящего местного производства!</p>
               </li>
             </ul>  
           </li>  
-          <li class="list__item">
-            <div class="minor-text">
-              <h3 class="headline headline--small">Там есть мост дьявола</h3>
+          <li class="list__item flex">
+            <div class="minor-text promo-item promo-item--size-s">
+              <h3 class="headline-main headline--small">Там есть мост дьявола</h3>
               <p>-№2-</p>
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>  
-            <div><img src="img/canyon.jpg" alt="фото скалы моста дьявола" width="800" height="384"></div> 
+            <div class="promo-item promo-item--size-l">
+              <img src="img/canyon.jpg" alt="фото скалы моста дьявола" width="800" height="384">
+            </div> 
           </li>
-          <li class="list__item background-opacity-first">
-            <h3 class="headline headline--small">Небольшая площадь</h3>
+          <li class="list__item background-opacity-first promo-item promo-item--size-s">
+            <h3 class="headline-main headline--small">Небольшая площадь</h3>
             <p>-№3-</p>
             <p>Все достопримечательности 
               находятся очень близко</p>
           </li>
-          <li class="background-opacity-second">
-            <h3 class="headline headline--small">Красивая дорога</h3>
+          <li class="background-opacity-second promo-item promo-item--size-s">
+            <h3 class="headline-main headline--small">Красивая дорога</h3>
               <p>-№4-</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li  class="background-opacity-first">
-            <h3 class="headline headline--small">Мало туристов</h3>
+          <li class="background-opacity-first promo-item promo-item--size-s">
+            <h3 class="headline-main headline--small">Мало туристов</h3>
               <p>-№5-</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
       </section>
       <section>
-        <h2 class="headline headline--medium">Заинтересовались?</h2>
-        <p class="mailing__p">Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне
-          </p>
-        <a class="button button--minor button--text-large" href="#">поиск гостиницы в седоне</a>
+        <div class="promo-item promo-item--size-m">
+          <h2 class="headline-main headline--medium">Заинтересовались?</h2>
+          <p class="mailing__p">Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+          <a class="button button--minor button--text-large" href="#">поиск гостиницы в седоне</a>
+      </div>
       </section>
       <section class="mailing mailing--image minor-text">
-        <h2 class="headline mailing__headline  mailing__headline--medium">Подпишитесь на рассылку</h2>
-        <p class="mailing__p">Только полезная информация и никакого спама,
-          честное бойскаутское!</p>
-        <form class="mailing" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="clients-email" placeholder="Ваш e-mail">
-          <button class="button button--major button--text-medium" type="button">подписаться</button>
-        </form>
+        <div class="promo-item promo-item--size-m">
+          <h2 class="headline-main mailing__headline-main  mailing__headline--medium">Подпишитесь на рассылку</h2>
+          <p class="mailing__p">Только полезная информация и никакого спама,
+            честное бойскаутское!</p>
+          <form class="mailing" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="email" name="clients-email" placeholder="Ваш e-mail">
+            <button class="button button--major button--text-medium" type="button">подписаться</button>
+          </form>
+      </div>
       </section>
-      <footer>
+      <footer class="flex">
         <p>
-            <ul class="list">
+            <ul class="list flex">
               <li>
                 <a class="link" href="https://twitter.com/htmlacademy_ru">
                   <img src="img/svg/social-twitter.svg" alt="twitter">
@@ -147,8 +157,7 @@
         </p>
     </footer>
     </main>
-
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  </div>
   </body>
 </html>
