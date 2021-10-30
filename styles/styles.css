@@ -357,7 +357,14 @@ body {
     justify-content: start;
     gap: 8px;
 }
-
+.hotels-quantity {
+    width: 160px;
+    height: 48px;
+}
+.hotels-quantity__wrapper {
+    gap: 51px;
+    align-items: center;
+}
 
 /* .mask {
     display: inline-block;
