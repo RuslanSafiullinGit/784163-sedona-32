@@ -116,7 +116,7 @@ body {
     gap: 20px;
 }
 .navigation__logo {
-    justify-self: center;
+
 }
 .desire-button {
     display: block;
@@ -127,12 +127,14 @@ body {
 }
 .navigation__logo {
     position: absolute;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    justify-self: center;
 }
 /* main */
 .img-slogan {
     display: block;
     margin: 0 auto;
+
 }
 .img-wrapper--contrast {
     background: no-repeat url(../img/index-background.jpg);
@@ -208,19 +210,23 @@ body {
     line-height: 21px;
 }
 
+/* mailing form */
+
 .mailing--image {
     background-image: url(../img/mailing-background.png);
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 1200px 411px;
-  }
+}
 
 .mailing__p {
     font-size: 22px;
     line-height: 26px;
+    width: 720px;
 }
 .mailing-form {
     display: flex;
+    width: 800px;
 }
 .mailing-form__input {
     width: 600px;
@@ -228,6 +234,13 @@ body {
     background-color: #F2F2F2;
     border-radius: 10px;
     border: none;
+}
+.mailing--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    min-height: 411px;
 }
 
 /* footer */
@@ -239,6 +252,20 @@ body {
 }
 .list__social {
     gap: 29px;
+}
+.list__social--logo {
+    fill: #83B3D3;
+}
+.list__social--logo:hover {
+    fill: #68A2CA;
+}
+.list__social--logo path:focus {
+    fill: #68A2CA;
+    border: 3px solid #83B3D3;
+    border-radius: 10px;
+}
+.list__social--logo:active {
+    fill: rgba(104, 162, 202, 0.3);
 }
 /* index */
 
@@ -333,7 +360,7 @@ body {
     line-height: 39px;
 }
 .choose-structure-img {
-    padding: 17px 16px;
+    padding: 15px 16px;
     border: solid 2px;
     border-radius: 4px;
 }
@@ -379,6 +406,7 @@ body {
 .hotels-quantity {
     width: 160px;
     height: 48px;
+    padding-left: 17px;
 }
 .hotels-quantity__wrapper {
     gap: 51px;
@@ -386,10 +414,13 @@ body {
 }
 
 .pagination-link {
-    display: block;
+    display: flex;
     width: 55px;
     height: 55px;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* .mask {
     display: inline-block;
@@ -406,11 +437,6 @@ body {
 /* .mask:hover {
     background-color: blue;
 } */
-
-. {
-
-}
-
 
 
 /* catalog search result */
